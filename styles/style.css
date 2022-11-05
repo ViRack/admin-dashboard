@@ -1,0 +1,19 @@
+@import 'meyer-reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+root {
+    --sidebar:      #3F88C5;
+    --card-accent:  #FFBA08;
+    --main:         #1C3144;
+    --background:   #A2AEBB; 
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
