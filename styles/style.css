@@ -51,8 +51,22 @@ a {
 }
 
 
-.nav_menu--toggle {
+.nav_menu {
     display: none;
+    position: fixed;
+    left: -100%;
+    top: 50px;
+    flex-direction: column;
+    background-color: wheat;
+    text-align: center;
+    transition: 0.1s;
+    background-color:#537D8D;
+}
+
+.nav_menu.active {
+    display: flex;
+    width: 100%;
+    left: 0;
 }
 
 /* HEADER ------------------------------------------------------------------------------------ */
@@ -124,6 +138,7 @@ a {
 .user-information-mobile {
     grid-area: user-information-mobile;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-self: center;
     color: var(--main);
