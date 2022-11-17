@@ -6,203 +6,239 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <script defer src="../js/script.js" ></script>
 </head>
-<body>
-    <div class="container">
+    <body>
+        <div class="container">
 
-        <header>
-            <form action="" method="post">
-                <img class="icon" src="" alt="search">
-                <input type="search">
-            </form>
+            <nav class="navbar">
 
-            <div class="profile-information">
-                <img src="" alt="" class="profile-picture">
-                <h3 class="greeting">Hi there,</h3>
-                <span class="profile-name">Vincent M</span>
-                <span class="profile-username">@morgan</span>
-            </div>
+                <!-- <div class="nav_primary">
+                    <div class="nav_primary__icon"><img src="" alt=""></div>
+                    <a href="" class="nav_link primary__link">Dashboard</a>
+                </div> -->
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
 
-            <div class="notification-settings">
-                <img src="" alt="" class="icon">
-                <img src="" alt="" class="profile-picture small-profile-picture">
-                <span class="profile-name">Vincent M</span>
-            </div>
+                <div class="nav_menu nav_menu--toggle">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <div class="nav_icon"><img src="" alt=""></div>
+                            <a href="" class="nav_link">Home</a>
+                        </li>
+                        <li class="nav_item">
+                            <div class="nav_icon"><img src="" alt=""></div>
+                            <a href="" class="nav_link">Profile</a>
+                        </li>
+                        <li class="nav_item">
+                            <div class="nav_icon"><img src="" alt=""></div>
+                            <a href="" class="nav_link">Messages</a>
+                        </li>
+                        <li class="nav_item">
+                            <div class="nav_icon"><img src="" alt=""></div>
+                            <a href="" class="nav_link">History</a>
+                        </li>
+                        <li class="nav_item">
+                            <div class="nav_icon"><img src="" alt=""></div>
+                            <a href="" class="nav_link">Tasks</a>
+                        </li>
+                        <li class="nav_item">
+                            <div class="nav_icon"><img src="" alt=""></div>
+                            <a href="" class="nav_link">Communities</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="nav_list nav_list--secondary">
+                        <li class="nav_item">
+                            <div class="nav_icon"><img src="" alt=""></div>
+                            <a href="" class="nav_link">Settings</a>
+                        </li>
+                        <li class="nav_item">
+                            <div class="nav_icon"><img src="" alt=""></div>
+                            <a href="" class="nav_link">Support</a>
+                        </li>
+                        <li class="nav_item">
+                            <div class="nav_icon"><img src="" alt=""></div>
+                            <a href="" class="nav_link">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="notifications-mobile">
+                    <div class="header-icon"><img src="../images/bell-outline.svg" alt=""></div>
+                </div>
 
-            <div class="links">
-                <a class="link">new</a>
-                <a class="link">Upload</a>
-                <a class="link">Share</a>
-            </div>
-        </header>
+                <div class="mobile-user-profile-picture"><img src="../images/fox-face.png" alt=""></div>
 
-        <aside>
-            <div class="logo">
-            </div>
 
-            <div class="links">
-                <div class="link">
-                    <img class="icon" src="" alt="home">
-                    <h2>Home</h2>
+                <div class="user-information-mobile">
+                    <div class="user-profile-picture"><img src="" alt=""></div>
+                    <p class="greeting">Hi there,</p>
+                    <p class="user-name">Morgan Oakley (@morgan)</p>
                 </div>
-                <div class="link">
-                    <img class="icon" src="" alt="profile">
-                    <h2>Profile</h2>
-                </div>
-                <div class="link">
-                    <img class="icon" src="" alt="messages">
-                    <h2>Messages</h2>
-                </div>
-                <div class="link">
-                    <img class="icon" src="" alt="history">
-                    <h2>History</h2>
-                </div>
-                <div class="link">
-                    <img class="icon" src="" alt="tasks">
-                    <h2>Tasks</h2>
-                </div>
-                <div class="link">
-                    <img class="icon" src="" alt="communities">
-                    <h2>Communities</h2>
-                </div>
-            </div>
 
-            <div class="links">
-                <div class="link">
-                    <img class="icon" src="" alt="Settings">
-                    <h2>Settings</h2>
+                <div class="header_links-mobile">
+                    <ul class="header_links__list">
+                        <li class="header_links__link">New</li>
+                        <li class="header_links__link">Upload</li>
+                        <li class="header_links__link">Share</li>
+                    </ul>
                 </div>
-                <div class="link">
-                    <img class="icon" src="" alt="Support">
-                    <h2>Support</h2>
-                </div>
-                <div class="link">
-                    <img class="icon" src="" alt="Privacy">
-                    <h2>Privacy</h2>
-                </div>
-            </div>
 
-        </aside>
+            </nav>
 
-        <main>
-            <section class="projects">
-                <div class="card">
-                    <div class="card__accent"></div>
-                    <div class="card__content">
-                        <div class="card__title"></div>
-                        <div class="card__p"></div>
-                        <div class="icons">
-                            <icon></icon>
-                            <icon></icon>
-                            <icon></icon>
+            <header class="header">
+                <div class="form-container">
+                    <form action="" method="post">
+                        <div class="header_icon"><img src="" alt=""></div>
+                        <input type="search" class="search">
+                    </form>
+                </div>
+                
+                <div class="notifications">
+                    <div class="header-icon"><img src="../images/bell-outline.svg" alt=""></div>
+                    <div class="notifications_user-profile-img"><img src="" alt=""></div>
+                    <p class="notifications_user-name">Morgan Oakley</p>
+                </div>
+
+                <div class="user-information">
+                    <div class="user-profile-picture"><img src="" alt=""></div>
+                    <p class="greeting">Hi there,</p>
+                    <p class="user-name">Morgan Oakley (@morgan)</p>
+                </div>
+
+                <div class="header_links">
+                    <ul class="header_links__list">
+                        <li class="header_links__link">New</li>
+                        <li class="header_links__link">Upload</li>
+                        <li class="header_links__link">Share</li>
+                    </ul>
+                </div>
+
+            </header>
+
+            <main class="main">
+                <div class="articles">
+                    <p class="title">Your Articles</p>
+                        <div class="card">
+                            <div class="card_title">Lorem, ipsum</div>
+                            <p class="card_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus quaerat totam magnam esse numquam atque non officiis, vel dolorum nisi expedita, delectus error aspernatur cupiditate. Et dicta quasi nihil officia nemo dolores harum eum odit voluptatibus itaque minus impedit vel modi excepturi culpa fugit atque, ratione quia, cumque ullam accusantium hic laborum dolorem. Itaque, omnis officiis provident repellendus impedit ad facere suscipit aspernatur alias voluptas, ipsa vitae dolores voluptates rerum sequi? Explicabo earum eos nostrum magnam rerum temporibus, itaque perferendis autem ab dolor velit distinctio deleniti ad perspiciatis aliquid necessitatibus recusandae nobis voluptatibus delectus sed. Quia consectetur tenetur quisquam.</p>
+                            <div class="card_icons">
+                                <ul class="card_icons__list">
+                                    <li class="card_icons_list-item"><img src="../images/star-plus-outline.svg" alt=""></li>
+                                    <li class="card_icons_list-item"><img src="../images/eye-plus-outline.svg" alt=""></li>
+                                    <li class="card_icons_list-item"><img src="../images/share-variant-outline.svg" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_title">Lorem, ipsum dolor.</div>
+                            <p class="card_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. A odit impedit saepe soluta explicabo omnis assumenda cumque tempora voluptatem aliquam. Perferendis at deserunt laborum inventore tenetur quam sunt amet? Ex quod veniam sapiente ducimus voluptatibus? Labore accusamus, laboriosam est vero, necessitatibus fugit porro debitis libero tempore inventore, voluptates maiores nisi!</p>
+                            <div class="card_icons">
+                                <ul class="card_icons__list">
+                                    <li class="card_icons_list-item"><img src="../images/star-plus-outline.svg" alt=""></li>
+                                    <li class="card_icons_list-item"><img src="../images/eye-plus-outline.svg" alt=""></li>
+                                    <li class="card_icons_list-item"><img src="../images/share-variant-outline.svg" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_title">Lorem.</div>
+                            <p class="card_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid libero exercitationem odio. Debitis, obcaecati. Est et voluptates omnis maxime architecto sapiente placeat error quo laborum sed libero, non eos. Cum ipsam sapiente ducimus quis saepe. Aliquam quae in deleniti, provident odio quasi, architecto quod minima reiciendis nemo ipsa possimus sint vel pariatur repudiandae culpa omnis?</p>
+                            <div class="card_icons">
+                                <ul class="card_icons__list">
+                                    <li class="card_icons_list-item"><img src="../images/star-plus-outline.svg" alt=""></li>
+                                    <li class="card_icons_list-item"><img src="../images/eye-plus-outline.svg" alt=""></li>
+                                    <li class="card_icons_list-item"><img src="../images/share-variant-outline.svg" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_title">Lorem, ipsum.</div>
+                            <p class="card_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste aut vero sunt eos vitae corporis cum ipsum. Eius alias nesciunt dicta dolores quis iste fuga sapiente nobis soluta ipsum. Velit, labore aliquam aliquid laborum voluptatibus ipsa quibusdam fuga ullam consequuntur iure non excepturi accusamus quae.</p>
+                            <div class="card_icons">
+                                <ul class="card_icons__list">
+                                    <li class="card_icons_list-item"><img src="../images/star-plus-outline.svg" alt=""></li>
+                                    <li class="card_icons_list-item"><img src="../images/eye-plus-outline.svg" alt=""></li>
+                                    <li class="card_icons_list-item"><img src="../images/share-variant-outline.svg" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_title">Lorem, ipsum.</div>
+                            <p class="card_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim odit minima quasi quia ipsam recusandae, culpa numquam, esse dolorem saepe beatae similique quos iste? Earum inventore distinctio saepe ipsa tempora. Blanditiis repellat exercitationem magni, ipsum est minus, architecto numquam, obcaecati ipsa dolores officia harum! Ab mollitia sequi sint accusamus, corporis distinctio obcaecati inventore sed provident nulla eius quod ducimus aliquam consectetur est molestias nostrum facilis.</p>
+                            <div class="card_icons">
+                                <ul class="card_icons__list">
+                                    <li class="card_icons_list-item"><img src="../images/star-plus-outline.svg" alt=""></li>
+                                    <li class="card_icons_list-item"><img src="../images/eye-plus-outline.svg" alt=""></li>
+                                    <li class="card_icons_list-item"><img src="../images/share-variant-outline.svg" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_title">Lorem, ipsum dolor.</div>
+                            <p class="card_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ad aspernatur blanditiis eos, vitae dolore ratione incidunt repudiandae obcaecati magnam corporis! Saepe totam molestiae corporis aliquid architecto illum error sequi dolorum mollitia sed? Dolores, sapiente.</p>
+                            <div class="card_icons">
+                                <ul class="card_icons__list">
+                                    <li class="card_icons_list-item"><img src="../images/star-plus-outline.svg" alt=""></li>
+                                    <li class="card_icons_list-item"><img src="../images/eye-plus-outline.svg" alt=""></li>
+                                    <li class="card_icons_list-item"><img src="../images/share-variant-outline.svg" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+
+                <aside class="sidebar">
+                    <p class="title">Announcements</p>
+                    <div class="announcements">
+                        <div class="announcement">
+                            <div class="announcement_title">help wanted</div>
+                            <div class="announcement_p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque odit cumque sapiente dolorum corporis, a tenetur, nulla veritatis quidem, repudiandae repellat obcaecati ab accusamus nihil consectetur modi. Aspernatur, magnam sed.</div>
+                        </div>
+                        <div class="announcement">
+                            <div class="announcement_title">server update</div>
+                            <div class="announcement_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore atque ratione odio animi fuga at, praesentium repellendus delectus enim pariatur.</div>
+                        </div>
+                        <div class="announcement">
+                            <div class="announcement_title">meeting</div>
+                            <div class="announcement_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quia recusandae sequi omnis dolor voluptate doloribus amet laborum, doloremque ad reprehenderit soluta! Eum aliquam nisi eligendi quas rerum praesentium repellendus.</div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card__accent"></div>
-                    <div class="card__content">
-                        <div class="card__title"></div>
-                        <div class="card__p"></div>
-                        <div class="icons">
-                            <icon></icon>
-                            <icon></icon>
-                            <icon></icon>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__accent"></div>
-                    <div class="card__content">
-                        <div class="card__title"></div>
-                        <div class="card__p"></div>
-                        <div class="icons">
-                            <icon></icon>
-                            <icon></icon>
-                            <icon></icon>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__accent"></div>
-                    <div class="card__content">
-                        <div class="card__title"></div>
-                        <div class="card__p"></div>
-                        <div class="icons">
-                            <icon></icon>
-                            <icon></icon>
-                            <icon></icon>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__accent"></div>
-                    <div class="card__content">
-                        <div class="card__title"></div>
-                        <div class="card__p"></div>
-                        <div class="icons">
-                            <icon></icon>
-                            <icon></icon>
-                            <icon></icon>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__accent"></div>
-                    <div class="card__content">
-                        <div class="card__title"></div>
-                        <div class="card__p"></div>
-                        <div class="icons">
-                            <icon></icon>
-                            <icon></icon>
-                            <icon></icon>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <div class="announcements">
-                <span class="announcements__title">Announcements</span>
-                <div class="announcements__card">
-                    <div class="announcement">
-                        <div class="announcement__title"></div>
-                        <div class="announcement__p"></div>
+                    <div class="trending">
+                        <p class="title">Trending</p>
+                        <div class="trending-user">
+                            <div class="trending-user-profile"><img src="../images/kisspng-chimpanzee-ape-primate-monkey-gorilla-5a78a6c7d69ef8.4500071815178564558791.png" alt=""></div>
+                            <div class="trending_title">@Chimpanzee</div>
+                            <div class="trending_p">Hangs by vines</div>
+                        </div>
+                        <div class="trending-user">
+                            <div class="trending-user-profile"><img src="../images/kisspng-giraffe-cartoon-face-clip-art-lol-cliparts-5a85bb2d5326a3.1111570815187136453406.png" alt=""></div>
+                            <div class="trending_title">@Giraffe</div>
+                            <div class="trending_p">Eats tall leaves</div>
+                        </div>
+                        <div class="trending-user">
+                            <div class="trending-user-profile"><img src="../images/kisspng-pigs-ear-drawing-cartoon-clip-art-silly-cartoon-face-5a88c0b6339e56.3035155615189116702114.png" alt=""></div>
+                            <div class="trending_title">@Pig</div>
+                            <div class="trending_p">Bathes in mud</div>
+                        </div>
+                        <div class="trending-user">
+                            <div class="trending-user-profile"><img src="../images/kisspng-monkey-cartoon-face-drawing-clip-art-sad-monkey-cliparts-5aaa89603f24e9.5560712815211257282587.png" alt=""></div>
+                            <div class="trending_title">@Monkey</div>
+                            <div class="trending_p">Hangs by vines</div>
+                        </div>
                     </div>
-                    <div class="announcement">
-                        <div class="announcement__title"></div>
-                        <div class="announcement__p"></div>
-                    </div>
-                    <div class="announcement">
-                        <div class="announcement__title"></div>
-                        <div class="announcement__p"></div>
-                    </div>
-                </div>
-            </div>
+                </aside>
 
-            <div class="trending">
-                <div class="user">
-                    <img src="" alt="" class="profile-picture small-profile-picture">
-                    <div class="user__title">@tegan</div>
-                    <div class="user__p">World Peace Builder</div>
-                </div>
-                <div class="user">
-                    <img src="" alt="" class="profile-picture small-profile-picture">
-                    <div class="user__title">@morgan</div>
-                    <div class="user__p">Super cool project</div>
-                </div>
-                <div class="user">
-                    <img src="" alt="" class="profile-picture small-profile-picture">
-                    <div class="user__title">@kendall</div>
-                    <div class="user__p">Life Changing App</div>
-                </div>
-                <div class="user">
-                    <img src="" alt="" class="profile-picture small-profile-picture">
-                    <div class="user__title">@alex</div>
-                    <div class="user__p">No Traffic Maker</div>
-                </div>
-            </div>
+            </main>
 
-        </main>
 
-    </div>
-</body>
+        </div>
+
+
+    </body>
 </html>
